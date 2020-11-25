@@ -29,4 +29,4 @@ npm start
 
 ## Demo
 
-https://seeren-training.github.io/Ionic/todo-list/
+https://seeren-training.github.io/Ionic/todo-list/wwww/index.html
