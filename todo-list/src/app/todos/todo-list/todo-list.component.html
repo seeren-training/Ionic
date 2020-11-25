@@ -1,0 +1,9 @@
+<h3>List</h3>
+
+<ul *ngFor="let todo of todoList">
+  <li>
+    <h3>{{ todo.name}}</h3>
+    <p>{{ todo.description}}</p>
+    <button (click)="delete(todo)">Delete</button>
+  </li>
+</ul>
