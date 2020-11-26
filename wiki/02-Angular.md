@@ -27,7 +27,7 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Consacrez le reste de la semaine à maîtriser ce Framework
+Basculez sur l'acquisiton du prérequis Angular
 
 ___
 

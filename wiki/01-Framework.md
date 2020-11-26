@@ -122,6 +122,6 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Supprimer l'ensemble des manipulations et recommencez
+Démarrez votre application
 
 ___

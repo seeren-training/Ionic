@@ -13,6 +13,7 @@ ___
 
 * [Framework](https://github.com/seeren-training/Ionic/wiki/01)
 * [Angular](https://github.com/seeren-training/Ionic/wiki/02)
+* [UI Components](https://github.com/seeren-training/Ionic/wiki/03)
 
 ___
 
