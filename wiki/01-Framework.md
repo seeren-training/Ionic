@@ -36,7 +36,7 @@ Ionic propose la création de projets sur 3 Frameworks différents: Angular, Rea
 
 ![image](https://raw.githubusercontent.com/seeren-training/Ionic/master/wiki/resources/frameworks.png)
 
-Le prerequis pour développer sur Ionic est la connaissance d'un d'entre eux.
+Le prérequis pour développer sur Ionic est la connaissance d'un d'entre eux.
 
 ___
 
