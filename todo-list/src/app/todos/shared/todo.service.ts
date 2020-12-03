@@ -51,7 +51,7 @@ export class TodoService {
       .pipe(
         tap((todoList: Todo[]) => {
           this.loading.stop();
-          this.todoList = todoList.reverse();
+          this.todoList = todoList;
         })
       );
   }
