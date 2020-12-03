@@ -100,6 +100,9 @@ export class TodoService {
   }
 
   doing() {
+    if (!this.form.valid) {
+      return this.get();
+    }
     const todo: Todo = {
       name: this.form.get('name').value,
       description: this.form.get('description').value,
