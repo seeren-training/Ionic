@@ -1,5 +1,40 @@
 :host {
-    display: block;
-    padding: 0.5rem;
-    background-color: rgb(238, 255, 245);
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+}
+
+form {
+    text-align: center;
+    ion-item {
+        --background: transparent;
+        --color: var(--ion-color-light);
+    }
+    .name,
+    .description {
+        text-align: center;
+    }
+}
+ion-row {
+    color: var(--ion-color-light);
+    text-align: center;
+    height: 100%;
+    padding-bottom: 2em;
+    &.todo {
+        background-color: var(--ion-color-primary);
+    }
+    &.doing {
+        background-color: var(--ion-color-success);
+    }
+    &.done {
+        background-color: var(--ion-color-danger);
+    }
+    .name {
+        font-weight: 300;
+        font-size: 3em;
+    }
+    .description {
+        font-weight: 300;
+        font-size: 0.8m;
+    }
 }

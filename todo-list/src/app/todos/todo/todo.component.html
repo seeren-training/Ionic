@@ -1,7 +1,26 @@
-<h3>Create</h3>
+<ion-grid class="ion-no-padding">
+    <ion-row class="ion-align-items-center ion-justify-content-center" [class.doing]="todo?.state == 'DOING'"
+        [class.done]="todo?.state == 'DONE'" [class.todo]="form">
+        <ion-col *ngIf="todo else todoForm" size="9">
+            <h2 class="name">
+                {{ todo.name}}
+            </h2>
+            <p class="description">
+                {{ todo.description }}
+            </p>
+        </ion-col>
+    </ion-row>
+</ion-grid>
 
-<input placeholder="Name" #name />
-<br />
-<input placeholder="Description" #description />
-<br />
-<button (click)="save(name.value, description.value)">Save</button>
+<ng-template #todoForm>
+    <form *ngIf="form" [formGroup]="form">
+        <ion-item class="name">
+            <ion-label position="floating">Todo</ion-label>
+            <ion-input formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item class="description">
+            <ion-label position="floating">Description</ion-label>
+            <ion-textarea formControlName="description"></ion-textarea>
+        </ion-item>
+    </form>
+</ng-template>

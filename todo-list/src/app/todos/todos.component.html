@@ -1,4 +1,25 @@
-<h1>Todo List</h1>
-
-<app-todo></app-todo>
-<app-todo-list></app-todo-list>
+<ion-app>
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons *ngIf="'/' !== url" slot="start" (click)="locationService.back()">
+                <ion-button color="dark">
+                    <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-title>{{ titleService.getTitle() }}</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-progress-bar *ngIf="loadingService.state" type="indeterminate"></ion-progress-bar>
+        <router-outlet></router-outlet>
+    </ion-content>
+    <ion-footer [ngSwitch]="url">
+        <ion-button *ngSwitchCase="'/'" [disabled]="loadingService.state" routerLink="/new" expand="full"
+            color="primary">Todo</ion-button>
+        <ion-button *ngSwitchCase="'/new'" [disabled]="loadingService.state" (click)="doing()" expand="full"
+            color="success">Doing</ion-button>
+        <ion-button *ngSwitchDefault (click)="done()" [disabled]="loadingService.state" expand="full" color="danger">
+            Done
+        </ion-button>
+    </ion-footer>
+</ion-app>

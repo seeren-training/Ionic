@@ -1,29 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LoadingService } from 'src/app/shared/services/loading.service';
 
 import { Todo } from '../shared/todo.model';
 import { TodoService } from '../shared/todo.service';
+
 
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.scss'],
 })
-export class TodoListComponent {
+export class TodoListComponent implements OnInit {
 
   public todoList: Todo[];
 
-  /**
-   * @param todoService 
-   */
-  constructor(private todoService: TodoService) {
-    this.todoList = this.todoService.todoList;
+  constructor(
+    public loadingService: LoadingService,
+    private todoService: TodoService
+  ) { }
+
+  ngOnInit(): void {
+    this.show();
   }
 
-  /**
-   * @param todo 
-   */
-  delete(todo: Todo): Todo {
-    return this.todoService.delete(todo);
+  show(): void {
+    this.todoService.get().subscribe((todoList: Todo[]) => this.todoList = todoList);
   }
 
 }

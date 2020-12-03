@@ -1,9 +1,33 @@
-<h3>List</h3>
+<ion-list *ngIf="loadingService.state else loading">
+  <ion-item *ngFor="let number of [0, 1, 2, 3, 4]">
+    <ion-avatar slot="start">
+      <ion-skeleton-text animated></ion-skeleton-text>
+    </ion-avatar>
+    <ion-label>
+      <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+      <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+    </ion-label>
+  </ion-item>
+</ion-list>
 
-<ul *ngFor="let todo of todoList">
-  <li>
-    <h3>{{ todo.name}}</h3>
-    <p>{{ todo.description}}</p>
-    <button (click)="delete(todo)">Delete</button>
-  </li>
-</ul>
+<ng-template #loading>
+  <ion-grid *ngIf="!loadingService.state && !todoList?.length else list">
+    <ion-row class="ion-align-items-center ion-justify-content-center empty-message">
+      <ion-col size="6">
+        {{ 0 === todoList?.length ? "Let's start by adding a Todo" : "An error occurs" }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ng-template>
+
+<ng-template #list>
+  <ion-list>
+    <ion-item [routerLink]="[todo.name]" *ngFor="let todo of todoList" [color]="todo.state == 'DOING' ? 'success' : 'danger'">
+      <ion-icon [name]="todo.state == 'DOING' ? 'flag-outline' : 'close'" slot="start"></ion-icon>
+      <ion-label>
+        <h2>{{ todo.name }}</h2>
+        <p>{{ todo.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ng-template>

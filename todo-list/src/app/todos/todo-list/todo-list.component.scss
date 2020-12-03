@@ -1,5 +1,13 @@
 :host {
-    display: block;
-    padding: 0.5rem;
-    background-color: rgb(238, 247, 255);
+    display: flex;
+    min-height: 100%;
+}
+ion-list {
+    padding: 0;
+    width: 100%;
+}
+.empty-message {
+    text-align: center;
+    height: 100%;
+    font-weight: 200;
 }
