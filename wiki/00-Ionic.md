@@ -15,9 +15,9 @@ ___
 * [Angular](https://github.com/seeren-training/Ionic/wiki/02)
 * [UI Components](https://github.com/seeren-training/Ionic/wiki/03)
 * [LifeCycle](https://github.com/seeren-training/Ionic/wiki/04)
-* [Cordova](https://github.com/seeren-training/Ionic/wiki/05)
-* [Plugins](https://github.com/seeren-training/Ionic/wiki/06)
-* [Build](https://github.com/seeren-training/Ionic/wiki/07)
+* [Build](https://github.com/seeren-training/Ionic/wiki/05)
+* [Cordova](https://github.com/seeren-training/Ionic/wiki/06)
+* [Plugins](https://github.com/seeren-training/Ionic/wiki/07)
 
 ___
 

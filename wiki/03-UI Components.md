@@ -1,10 +1,38 @@
 # UI Components
 
+*  🔖 **Layout**
 *  🔖 **Components**
 *  🔖 **Router**
 *  🔖 **Library**
 
 ___
+
+## 📑 [Layout](https://ionicframework.com/docs/layout/structure)
+
+Ionic Framework fournit plusieurs mises en page différentes qui peuvent être utilisées pour structurer une application.
+
+### 🏷️ **Content**
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Header</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <h1>Main Content</h1>
+  </ion-content>
+</ion-app>
+```
+
+
+### 🏷️ **CSS**
+
+Ionic Framework fournit un ensemble de classes utilitaires CSS qui peuvent être utilisées sur n'importe quel élément afin de modifier le texte, le placement des éléments ou d'ajuster le remplissage et la marge.
+
+🔗 [Utilities](https://ionicframework.com/docs/layout/css-utilities)
 
 ## 📑 [Components](https://ionicframework.com/docs/components)
 
@@ -35,7 +63,7 @@ Router outlet est un composant utilisé dans le routage dans une application Ang
 
 ### 🏷️ **[ion-router-outlet](https://ionicframework.com/docs/api/router-outlet)**
 
-Il se comporte de la même manière que le router outlet intégré d'Angular ou de Vue, mais contient la logique permettant de fournir une navigation empilée et d'animer les vues d'entrée et de sortie.
+Il se comporte de la même manière que le router outlet intégré d'Angular ou de Vue, mais contient la logique permettant de fournir une navigation empilée et d'animer les vues d'entrée et de sortie. Il ne prend pas en charge les vues enfants.
 
 ```html
 <ion-router-outlet></ion-router-outlet>
@@ -43,7 +71,7 @@ Il se comporte de la même manière que le router outlet intégré d'Angular ou 
 
 ___
 
-## 📑 Library
+## 📑 Cross device
 
 Les composants d'affichage s'adaptent en fonction de l'OS, le [menu](https://ionicframework.com/docs/api/menu) en est un exemple.
 

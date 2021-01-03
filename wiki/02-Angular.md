@@ -21,7 +21,7 @@ ___
 
 La connaissance d'un framework étant un prérequis, je vous invite à partir à l'exploration de ce dernier.
 
-@see: https://github.com/seeren-training/Angular/wiki/01
+🔗 [Angular](https://github.com/seeren-training/Angular/wiki/01)
 
 ___
 
