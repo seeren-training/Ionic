@@ -76,9 +76,9 @@ ___
 
 > Check Angular FormControl and Validators
 
-* 📝 A Custom matcher must be used to handle password repeat error
+* 📝 Password repeat error must be handle
 
-> Check Custom Matcher
+> Check solutions
 
 ___
 
