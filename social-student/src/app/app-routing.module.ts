@@ -5,11 +5,17 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'auth',
-    loadChildren: () => import('./authorizations/authorizations.module').then(m => m.AuthorizationsModule)
+    loadChildren: () => import('./authorizations/authorizations.module').then(m => m.AuthorizationsModule),
+    canActivate: [
+      UserGuard
+    ]
   },
   {
     path: 'contacts',
-    loadChildren: () => import('./contacts/contacts.module').then(m => m.ContactsModule)
+    loadChildren: () => import('./contacts/contacts.module').then(m => m.ContactsModule),
+    canActivate: [
+      UserGuard
+    ]
   },
   {
     path: '**',

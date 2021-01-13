@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { EntryComponent } from './entry/entry.component';
 import { SharedModule } from '../shared/shared.module';
+import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
+import { RepeatedPasswordValidator } from './shared/validators/repeated-password.validator';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { SharedModule } from '../shared/shared.module';
     AuthorizationsComponent,
     LoginComponent,
     RegisterComponent,
-    EntryComponent
+    EntryComponent,
+    ToolbarComponent,
+    RepeatedPasswordValidator
   ],
   imports: [
     CommonModule,
