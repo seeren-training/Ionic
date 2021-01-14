@@ -4,6 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { LoadingService } from 'src/app/shared/services/loading.service';
+import { TodoFormService } from '../shared/todo-form.service';
 import { Todo } from '../shared/todo.model';
 import { TodoService } from '../shared/todo.service';
 
@@ -19,27 +20,24 @@ export class TodoComponent implements OnInit {
 
   public todo: Todo;
 
-  /**
-   * @param todoService 
-   */
   constructor(
     public loadingService: LoadingService,
     private titleService: Title,
     private routeService: ActivatedRoute,
     private routerService: Router,
-    private todoService: TodoService) { }
+    private todoService: TodoService,
+    private todoFormService: TodoFormService) { }
 
   ngOnInit(): void {
     this.titleService.setTitle("Todo");
-    this.todoService.get().subscribe(
-      () => {
-        const name = this.routeService.snapshot.params.name;
-        if (!name) {
-          this.form = this.todoService.form;
-        } else if (!(this.todo = this.todoService.findByName(name))) {
-          this.routerService.navigate(["/"]);
-        }
-      });
+    let name: string = null;
+    this.todoService.get().subscribe(() => {
+      if (!(name = this.routeService.snapshot.params.name)) {
+        this.form = this.todoFormService.form;
+      } else if (!(this.todo = this.todoService.findByName(name))) {
+        this.routerService.navigate(["/"]);
+      }
+    });
   }
 
 }

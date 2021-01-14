@@ -29,6 +29,7 @@
     "cordova": "^10.0.0",
     "cordova-android": "9.0.0",
     "cordova-browser": "6.0.0",
+    "cordova-res": "^0.15.2",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

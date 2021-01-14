@@ -1,8 +1,7 @@
 export const environment = {
   production: false,
-  jsonbin: {
-    key: "$2a$10$t7NQV0SJWhqIUaR0lidxAOrjP8o3Nv7lG3VySw3zjaCU14vZF0X.y",
-    url: "https://api.jsonbin.io/b/5fc907c0177c556ef9b642e3"
+  api: {
+    url: "http://127.0.0.1:8000/todos/"
   }
 };
 

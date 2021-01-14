@@ -5,6 +5,8 @@ import { Title } from '@angular/platform-browser';
 
 import { LoadingService } from '../shared/services/loading.service';
 import { TodoService } from './shared/todo.service';
+import { StateService } from './shared/state.service';
+import { TodoFormService } from './shared/todo-form.service';
 
 
 @Component({
@@ -19,10 +21,12 @@ export class TodosComponent implements OnInit, AfterContentChecked {
   constructor(
     private changeService: ChangeDetectorRef,
     private routerService: Router,
-    private todoService: TodoService,
     public titleService: Title,
     public locationService: Location,
     public loadingService: LoadingService,
+    private todoService: TodoService,
+    private todoFormService: TodoFormService,
+    private stateService: StateService,
   ) { }
 
   ngOnInit(): void {
@@ -41,15 +45,13 @@ export class TodosComponent implements OnInit, AfterContentChecked {
   }
 
   done(): void {
-    this.todoService
-      .done(this.todoService.todo)
-      .subscribe(() => this.routerService.navigate(['/']))
+    this.stateService.done(this.todoService.todo).subscribe(() => this.routerService.navigate(['/']))
   }
 
   doing(): void {
-    this.todoService
-      .doing()
-      .subscribe(() => this.routerService.navigate(['/']))
+    if (this.todoFormService.form.valid) {
+      this.stateService.doing().subscribe(() => this.routerService.navigate(['/']))
+    }
   }
 
 }

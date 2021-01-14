@@ -1,7 +1,0 @@
-{
-  "name": "social-student",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
