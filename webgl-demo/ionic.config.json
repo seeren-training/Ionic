@@ -1,0 +1,7 @@
+{
+  "name": "webgl-demo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

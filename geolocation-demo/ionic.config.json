@@ -1,0 +1,7 @@
+{
+  "name": "geolocation-demo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

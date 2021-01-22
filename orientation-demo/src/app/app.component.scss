@@ -1,0 +1,29 @@
+$color: blueviolet;
+$stable: green;
+:host {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    .niveau {
+        &.stable {
+            border-top: solid 1px $stable;
+            border-bottom: solid 1px $stable;
+        }
+        border-top: solid 1px $color;
+        border-bottom: solid 1px $color;
+        position: relative;
+        width: 100%;
+        height: 4em;
+        .bulle {
+            position: absolute;
+            width: 2em;
+            height: 2em;
+            background-color: $color;
+            border-radius: 50%;
+            margin-left: -1em;
+            left: 50%;
+            top: 1.2em;
+        }
+    }
+}
