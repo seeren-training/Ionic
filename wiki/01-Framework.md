@@ -42,7 +42,9 @@ ___
 
 ## 📑 [Get started](https://ionicframework.com/getting-started)
 
-Ionic propose un [guide](https://blog.ionicframework.com/new-to-the-command-line/) pour savoir utiliser un terminal pour chaque système d'exploitation.
+Ionic propose un guide pour savoir utiliser un terminal pour chaque système d'exploitation.
+
+[Command Line Guide](https://blog.ionicframework.com/new-to-the-command-line/)
 
 ![image](https://raw.githubusercontent.com/seeren-training/Ionic/master/wiki/resources/start.png)
 
@@ -54,7 +56,7 @@ Installez le CLI avec un package manager.
 npm install @ionic/cli
 ```
 
-Pour exécuter le CLI de façon locale utiliser npm.
+Pour exécuter le CLI de façon locale utilisez `npx`.
 
 ```bash
 npx ionic
@@ -80,7 +82,9 @@ ___
 
 ### 🏷️ **[Serve](https://ionicframework.com/docs/cli/commands/serve)**
 
-Ouvrez votre projet dans votre IDE préféré, Ionic nous offre quelques [recommandations](https://ionicframework.com/docs/v3/developer-resources/editors_and_ides/).
+Ouvrez votre projet dans votre IDE préféré, Ionic nous offre quelques recommandations.
+
+[IDE Recommandations](https://ionicframework.com/docs/v3/developer-resources/editors_and_ides/)
 
 Dans la cas d'une installation locale d'Ionic vous devez installer ces dépendances.
 
@@ -94,9 +98,9 @@ Pour exécuter votre projet, la commande start est disponible.
 npm start
 ```
 
-votre application est disponible à l'adresse http://localhost:4200/
+Votre application est disponible à l'adresse http://localhost:4200/
 
-🔗 [ionic serve](https://ionicframework.com/docs/cli/commands/serve)
+🔗 [Ionic Serve](https://ionicframework.com/docs/cli/commands/serve)
 
 En utilisant la commande serve d'Ionic le projet s'ouvre directement dans le navigateur.
 
@@ -104,7 +108,7 @@ En utilisant la commande serve d'Ionic le projet s'ouvre directement dans le nav
 npx ionic serve
 ```
 
-🔗 [ng serve](https://angular.io/cli/serve)
+🔗 [Angular serve](https://angular.io/cli/serve)
 
 Vous remarquez que start est un shortcut vers ng serve, vous pouvez également exécuter cette commande pour démarrer votre projet
 
@@ -122,6 +126,4 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Démarrez votre application
-
-___
+Démarrez votre application.

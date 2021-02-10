@@ -13,7 +13,7 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Supprimez les modules et composants existants et leur référence dans le dossier `app` pour ne conserver que `app.module.ts`, `app.component.ts` et `app.component.html`. Dans le template de app component, écrive "Hello World".
+Supprimez les modules et composants existants et leur référence dans le dossier `app` pour ne conserver que app.module.ts, app.component.ts et app.component.html. Dans le template de app component, écrive "Hello World".
 
 ___
 
@@ -21,13 +21,13 @@ ___
 
 La connaissance d'un framework étant un prérequis, je vous invite à partir à l'exploration de ce dernier.
 
-🔗 [Angular](https://github.com/seeren-training/Angular/wiki/01)
+[Angular](https://github.com/seeren-training/Angular)
 
 ___
 
 👨🏻‍💻 Manipulation
 
-Basculez sur l’acquisition du prérequis Angular
+Basculez sur l’acquisition du prérequis Angular en parcourant le cours associé.
 
 ___
 

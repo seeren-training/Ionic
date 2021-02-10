@@ -20,22 +20,19 @@ Ionic Framework fournit plusieurs mises en page différentes qui peuvent être u
       <ion-title>Header</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <ion-content>
     <h1>Main Content</h1>
   </ion-content>
 </ion-app>
 ```
 
-
 ### 🏷️ **CSS**
 
 Ionic Framework fournit un ensemble de classes utilitaires CSS qui peuvent être utilisées sur n'importe quel élément afin de modifier le texte, le placement des éléments ou d'ajuster le remplissage et la marge.
 
-🔗 [Utilities](https://ionicframework.com/docs/layout/css-utilities)
+[Utilities](https://ionicframework.com/docs/layout/css-utilities)
 
 ## 📑 [Components](https://ionicframework.com/docs/components)
-
 
 Les applications ioniques sont constituées de blocs de construction de haut niveau appelés Composants, qui vous permettent de créer rapidement l'interface utilisateur de votre application.
 
@@ -47,12 +44,12 @@ Ionic est livré avec un certain nombre de composants, y compris des cartes, des
 
 Pour importer la librairie de components dans votre projet, contrairement à la librairie Angular Material une ligne suffit mais elle a besoin d'une initialisation.
 
-```ts
-  imports: [
-    //...
-    IonicModule.forRoot(),
-    //...
-  ],
+```js
+imports: [
+  //...
+  IonicModule.forRoot(),
+  //...
+],
 ```
 
 ___
@@ -61,7 +58,7 @@ ___
 
 Router outlet est un composant utilisé dans le routage dans une application Angular ou Vue.
 
-### 🏷️ **[ion-router-outlet](https://ionicframework.com/docs/api/router-outlet)**
+[ion-router-outlet](https://ionicframework.com/docs/api/router-outlet
 
 Il se comporte de la même manière que le router outlet intégré d'Angular ou de Vue, mais contient la logique permettant de fournir une navigation empilée et d'animer les vues d'entrée et de sortie. Il ne prend pas en charge les vues enfants.
 
@@ -73,7 +70,7 @@ ___
 
 ## 📑 Cross device
 
-Les composants d'affichage s'adaptent en fonction de l'OS, le [menu](https://ionicframework.com/docs/api/menu) en est un exemple.
+Les composants d'affichage s'adaptent en fonction de l'OS, le menu en est un exemple.
 
 ```html
 <ion-menu side="start">
@@ -100,6 +97,4 @@ ___
 
 👨🏻‍💻 Manipulation
 
-Après avoir détaillé votre expérience utilisateur sur wireframe, implémentez la en utilisant les composants d'affichage présents dans Ionic
-
-___
+Après avoir détaillé votre expérience utilisateur sur wireframe, implémentez la en utilisant les composants d'affichage présents dans Ionic.
