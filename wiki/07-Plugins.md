@@ -27,9 +27,11 @@ ___
 
 De nombreux modules ou services facilitant l'intégration des plugins Cordova sont disponibles:
 
-* [Device orientation](https://ionicframework.com/docs/native/device-orientation)
-* [Geolocation](https://ionicframework.com/docs/enterprise/geolocation)
-* [Vibration](https://ionicframework.com/docs/enterprise/vibration)
+[Device orientation](https://ionicframework.com/docs/native/device-orientation)
+
+[Geolocation](https://ionicframework.com/docs/enterprise/geolocation)
+
+[Vibration](https://ionicframework.com/docs/enterprise/vibration)
 
 Pour fonctionner ils nécessitent d'être dans un environnement de build mobile avec la présence de Cordova.
 
@@ -38,5 +40,3 @@ ___
 👨🏻‍💻 Manipulation
 
 Installez et expérimentez des plugins dont l'intégration est simplifiée.
-
-___

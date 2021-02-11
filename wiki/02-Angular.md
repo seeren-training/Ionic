@@ -28,7 +28,3 @@ ___
 👨🏻‍💻 Manipulation
 
 Basculez sur l’acquisition du prérequis Angular en parcourant le cours associé.
-
-___
-
-

@@ -26,5 +26,3 @@ ___
 👨🏻‍💻 Manipulation
 
 Ajustez vos hooks à ceux proposé par Ionic
-
-___
