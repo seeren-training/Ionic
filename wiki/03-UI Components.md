@@ -58,7 +58,7 @@ ___
 
 Router outlet est un composant utilisé dans le routage dans une application Angular ou Vue.
 
-[ion-router-outlet](https://ionicframework.com/docs/api/router-outlet
+[ion-router-outlet](https://ionicframework.com/docs/api/router-outlet)
 
 Il se comporte de la même manière que le router outlet intégré d'Angular ou de Vue, mais contient la logique permettant de fournir une navigation empilée et d'animer les vues d'entrée et de sortie. Il ne prend pas en charge les vues enfants.
 

@@ -21,8 +21,6 @@ ___
 
 La connaissance d'un framework étant un prérequis, je vous invite à partir à l'exploration de ce dernier.
 
-[Angular](https://github.com/seeren-training/Angular)
-
 ___
 
 👨🏻‍💻 Manipulation

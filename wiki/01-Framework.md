@@ -100,7 +100,7 @@ npm start
 
 Votre application est disponible à l'adresse http://localhost:4200/
 
-🔗 [Ionic Serve](https://ionicframework.com/docs/cli/commands/serve)
+🔗 [Ionic serve](https://ionicframework.com/docs/cli/commands/serve)
 
 En utilisant la commande serve d'Ionic le projet s'ouvre directement dans le navigateur.
 
